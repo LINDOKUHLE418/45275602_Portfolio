@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lindokuhle Nkosi - Virtual CV & Portfolio</title>
+    <title>Lindokuhle Nkosi - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Stylish Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="logo">Lindokuhle Nkosi</div>
+        <div class="logo">Lindokuhle<span class="dot">.</span></div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -21,39 +23,74 @@
         </ul>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero / Greeting Section -->
     <header class="hero">
-        <h1>Hi, I'm <span class="highlight">Lindokuhle Nkosi</span></h1>
-        <p>BSc in Information Technology Student @ North-West University</p>
-        <p>Software Engineering | Cybersecurity | Artificial Intelligence</p>
-        <a href="#projects" class="btn">View My Work</a>
+        <div class="hero-container">
+            <div class="hero-text">
+                <span class="badge">Welcome to my portfolio</span>
+                <h1>Hi, I'm <span class="name-highlight">Lindokuhle Nkosi</span>, <br>
+                <span class="engineer-highlight">Aspiring Software Engineer</span></h1>
+                <p class="hero-subtext">BSc in Information Technology Student @ North-West University | Cybersecurity & AI Enthusiast</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                </div>
+            </div>
+            
+            <!-- Picture Option 1: Hero Section -->
+            <div class="hero-image-container">
+                <div class="image-frame">
+                    <!-- Replace 'profile.jpg' with your picture file -->
+                    <img src="WhatsApp Image 2026-07-21 at 21.27.56.jpeg" alt="Lindokuhle Nkosi" class="profile-img">
+                </div>
+            </div>
+        </div>
     </header>
 
     <!-- About Section -->
     <section id="about" class="section">
-        <h2>About Me</h2>
-        <p class="about-text">
-            Bachelor of Science in Information Technology student at North-West University with strong foundations in programming, database systems, and problem-solving. Experienced in software development and data-driven systems using SQL, Java, C++, C#, and Python. Passionate about cybersecurity, artificial intelligence, and building secure, efficient technology solutions.
-        </p>
+        <div class="about-container">
+            <!-- Picture Option 2: About Section -->
+            <div class="about-image-container">
+                <div class="about-image-frame">
+                    <!-- Replace 'profile.jpg' with your picture file -->
+                    <img src="WhatsApp Image 2026-07-21 at 21.27.56.jpeg" alt="Lindokuhle Nkosi" class="profile-img">
+                </div>
+            </div>
+
+            <div class="about-content">
+                <h2 class="section-title">About Me</h2>
+                <p class="about-text">
+                    I am a Bachelor of Science in Information Technology student at North-West University with strong foundations in programming, database systems, and analytical problem-solving[cite: 2]. Experienced in software development and data-driven systems using SQL, Java, C++, C#, and Python[cite: 2].
+                </p>
+                <p class="about-text">
+                    Passionate about cybersecurity, artificial intelligence, and building secure and efficient technology solutions[cite: 2]. As I grow in my career, <strong>I am extremely keen on making a lasting impact in the technology industry</strong> by applying technical excellence to real-world challenges.
+                </p>
+            </div>
+        </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="section gray-bg">
-        <h2>Technical & Core Skills</h2>
+        <h2 class="section-title">Technical & Core Skills</h2>
         <div class="skills-grid">
             <div class="skill-card">
+                <div class="card-icon">💻</div>
                 <h3>Languages</h3>
                 <p>Python, Java, C++, C#, SQL</p>
             </div>
             <div class="skill-card">
+                <div class="card-icon">🛠️</div>
                 <h3>Databases & Tools</h3>
                 <p>SQL, Oracle, ASP.NET, Git, GitHub, Burp Suite</p>
             </div>
             <div class="skill-card">
+                <div class="card-icon">🛡️</div>
                 <h3>Core Concepts</h3>
                 <p>Data Structures, OOP, Cybersecurity & Vulnerability Testing, Generative AI</p>
             </div>
             <div class="skill-card">
+                <div class="card-icon">✨</div>
                 <h3>Professional Skills</h3>
                 <p>Communication, Tutoring/Academic Support, Computer Literacy, Problem-Solving</p>
             </div>
@@ -62,15 +99,15 @@
 
     <!-- Work Experience Section -->
     <section id="experience" class="section">
-        <h2>Work Experience</h2>
+        <h2 class="section-title">Work Experience</h2>
         <div class="timeline">
             <div class="timeline-item">
                 <h3>MWR Virtual Assistant - Cybersecurity</h3>
                 <span class="date">March 2026 – June 2026</span>
                 <ul>
-                    <li>Gained practical experience in web application security testing using Burp Suite.</li>
-                    <li>Applied concepts including XSS, DOM-Based XSS, CSRF, SQL Injection, RCE, File Upload vulnerabilities, Encoding, Encryption, and Hashing.</li>
-                    <li>Completed a capstone security challenge identifying and analyzing web application security flaws.</li>
+                    <li>Gained practical experience in web application security testing using Burp Suite[cite: 2].</li>
+                    <li>Applied concepts including XSS, DOM-Based XSS, CSRF, SQL Injection, RCE, File Upload vulnerabilities, Encoding, Encryption, and Hashing[cite: 2].</li>
+                    <li>Completed a capstone security challenge identifying and analyzing web application security flaws[cite: 2].</li>
                 </ul>
             </div>
             <div class="timeline-item">
@@ -78,9 +115,9 @@
                 <p class="subheading">School of Computer Science & Information Systems - North-West University</p>
                 <span class="date">July 2025 – November 2025</span>
                 <ul>
-                    <li>Assisted first-year students with programming concepts in C# using ASP.NET.</li>
-                    <li>Facilitated lab sessions, guided students through exercises, and provided tutorial support.</li>
-                    <li>Assisted lecturers with marking and providing detailed student feedback.</li>
+                    <li>Assisted first-year students with programming concepts in C# using ASP.NET[cite: 2].</li>
+                    <li>Facilitated lab sessions, guided students through exercises, and provided tutorial support[cite: 2].</li>
+                    <li>Assisted lecturers with marking and providing detailed student feedback[cite: 2].</li>
                 </ul>
             </div>
         </div>
@@ -88,64 +125,64 @@
 
     <!-- Academic Projects Section -->
     <section id="projects" class="section gray-bg">
-        <h2>Academic Projects</h2>
+        <h2 class="section-title">Academic Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
                 <h3>Clinic Booking System</h3>
-                <p><strong>Tech:</strong> ASP.NET / Visual Studio</p>
-                <p>Web-based clinic booking system developed to streamline appointment scheduling, manage bookings, reduce administrative workload, and improve user experience.</p>
-                <a href="https://github.com/LINDOKUHLE418" target="_blank" class="project-link">View Code Repository</a>
+                <span class="tech-tag">ASP.NET / Visual Studio</span>
+                <p>Web-based clinic booking system developed to streamline appointment scheduling, manage bookings, reduce administrative workload, and improve user experience[cite: 2].</p>
+                <a href="https://github.com/LINDOKUHLE418" target="_blank" class="project-link">View Code Repository →</a>
             </div>
             <div class="project-card">
                 <h3>Restaurant Ordering System</h3>
-                <p><strong>Tech:</strong> C++</p>
-                <p>Command-line ordering system enabling customer menu selection, automated total calculations, and receipt generation to improve transaction accuracy.</p>
-                <a href="https://github.com/LINDOKUHLE418" target="_blank" class="project-link">View Code Repository</a>
+                <span class="tech-tag">C++</span>
+                <p>Command-line ordering system enabling customer menu selection, automated total calculations, and receipt generation to improve transaction accuracy[cite: 2].</p>
+                <a href="https://github.com/LINDOKUHLE418" target="_blank" class="project-link">View Code Repository →</a>
             </div>
             <div class="project-card">
-                <h3>Educational Privacy Awareness Game</h3>
-                <p><strong>Tech:</strong> Scratch</p>
-                <p>Collaborative project developing an educational game addressing privacy risks related to facial recognition and safeguards for responsible tech use.</p>
-                <a href="https://github.com/LINDOKUHLE418" target="_blank" class="project-link">View Code Repository</a>
+                <h3>Educational Privacy Game</h3>
+                <span class="tech-tag">Scratch</span>
+                <p>Collaborative project developing an educational game addressing privacy risks related to facial recognition and safeguards for responsible tech use[cite: 2].</p>
+                <a href="https://github.com/LINDOKUHLE418" target="_blank" class="project-link">View Code Repository →</a>
             </div>
         </div>
     </section>
 
     <!-- Certifications Section -->
     <section id="certifications" class="section">
-        <h2>Certifications</h2>
+        <h2 class="section-title">Certifications</h2>
         <div class="cert-grid">
             <div class="cert-card">
                 <h3>GenAI Course for Software Engineers</h3>
-                <p><strong>WeThinkCode (2025)</strong></p>
-                <p>Large language models, prompt engineering, AI workflows, and ethical AI usage in production.</p>
+                <p class="cert-issuer">WeThinkCode (2025)</p>
+                <p>Large language models, prompt engineering, AI workflows, and ethical AI usage in production[cite: 2].</p>
             </div>
             <div class="cert-card">
                 <h3>Introduction to CISSP</h3>
-                <p><strong>Simplilearn</strong></p>
-                <p>Cybersecurity CIA triad, access control, authentication, and core system defense principles.</p>
+                <p class="cert-issuer">Simplilearn</p>
+                <p>Cybersecurity CIA triad, access control, authentication, and core system defense principles[cite: 2].</p>
             </div>
             <div class="cert-card">
                 <h3>Microsoft AI Fluency Course</h3>
-                <p><strong>Microsoft / Geekulcha</strong></p>
-                <p>Artificial intelligence fundamentals, responsible AI, and modern business application.</p>
+                <p class="cert-issuer">Microsoft / Geekulcha</p>
+                <p>Artificial intelligence fundamentals, responsible AI, and modern business application[cite: 2].</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section gray-bg">
-        <h2>Get In Touch</h2>
-        <p>Feel free to reach out for career opportunities, collaborations, or networking!</p>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-subtext">Feel free to reach out for career opportunities, collaborations, or networking!</p>
         <div class="contact-links">
-            <a href="https://www.linkedin.com/in/lindokuhle-nkosi-1b63b723a" target="_blank" class="btn">LinkedIn</a>
-            <a href="https://github.com/LINDOKUHLE418" target="_blank" class="btn">GitHub Profile</a>
-            <a href="mailto:lindokuhlenkosi808@gmail.com" class="btn">Email Me</a>
+            <a href="https://www.linkedin.com/in/lindokuhle-nkosi-1b63b723a" target="_blank" class="btn btn-primary">LinkedIn</a>
+            <a href="https://github.com/LINDOKUHLE418" target="_blank" class="btn btn-secondary">GitHub Profile</a>
+            <a href="mailto:lindokuhlenkosi808@gmail.com" class="btn btn-pink">Email Me</a>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Lindokuhle Nkosi. All rights reserved.</p>
+        <p>&copy; 2026 Lindokuhle Nkosi. Designed with care & professional flair.</p>
     </footer>
 
 </body>
