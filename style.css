@@ -24,7 +24,7 @@ body {
     line-height: 1.6;
 }
 
-/* Navbar - Rich Deep Pink */
+/* Navbar - Deep Pink */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -65,7 +65,7 @@ body {
     color: var(--pink-card);
 }
 
-/* Hero / Greeting Section - Vibrant Pink Gradient */
+/* Hero Section */
 .hero {
     background: linear-gradient(135deg, #ff758f 0%, var(--pink-vibrant) 50%, var(--pink-deep) 100%);
     padding: 6rem 8%;
@@ -146,7 +146,7 @@ body {
     background: #fff;
 }
 
-/* Dark Blue Buttons */
+/* Dark Blue Action Buttons */
 .hero-btns {
     display: flex;
     gap: 1rem;
@@ -176,10 +176,9 @@ body {
 }
 
 .btn-secondary {
-    background: transparent;
+    background: var(--navy-blue-btn);
     color: white;
     border: 2px solid var(--dark-blue-btn);
-    background: var(--navy-blue-btn);
 }
 
 .btn-secondary:hover {
@@ -242,7 +241,7 @@ body {
     margin-bottom: 1.2rem;
 }
 
-/* Pink Cards & Grids */
+/* Skills Cards & Grid */
 .skills-grid, .projects-grid, .cert-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -265,14 +264,52 @@ body {
     box-shadow: 0 10px 25px rgba(201, 24, 74, 0.2);
 }
 
-.card-icon {
-    font-size: 2rem;
-    margin-bottom: 0.8rem;
-}
-
 .skill-card h3, .project-card h3, .cert-card h3 {
     color: var(--pink-deep);
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+/* Badge/Icon Grid Styling */
+.tech-icons-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    background: #fff;
+    padding: 0.6rem 0.8rem;
+    border-radius: 12px;
+    border: 1px solid var(--pink-soft);
+    box-shadow: 0 2px 6px rgba(201, 24, 74, 0.08);
+    transition: all 0.2s ease;
+    flex: 1 1 calc(33.33% - 0.8rem);
+    min-width: 80px;
+}
+
+.tech-item:hover {
+    transform: translateY(-3px);
+    border-color: var(--pink-vibrant);
+    box-shadow: 0 4px 12px rgba(201, 24, 74, 0.15);
+}
+
+.tech-item img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.tech-item span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--dark-blue-btn);
+    text-align: center;
 }
 
 .tech-tag {
