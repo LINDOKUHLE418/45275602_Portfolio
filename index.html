@@ -3,87 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lindokuhle - Virtual CV & Portfolio</title>
+    <title>Lindokuhle Nkosi - Virtual CV & Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="logo">Lindokuhle</div>
+        <div class="logo">Lindokuhle Nkosi</div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
+            <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Header / Hero Section -->
+    <!-- Hero Section -->
     <header class="hero">
-        <h1>Hi, I'm <span class="highlight">Lindokuhle</span></h1>
-        <p>Software Engineering & Cybersecurity Enthusiast</p>
+        <h1>Hi, I'm <span class="highlight">Lindokuhle Nkosi</span></h1>
+        <p>BSc in Information Technology Student @ North-West University</p>
+        <p>Software Engineering | Cybersecurity | Artificial Intelligence</p>
         <a href="#projects" class="btn">View My Work</a>
     </header>
 
     <!-- About Section -->
     <section id="about" class="section">
         <h2>About Me</h2>
-        <p>Passionate software developer and cybersecurity enthusiast focused on building secure, efficient, and user-friendly web applications. Currently building my portfolio to showcase full-stack development and security skills.</p>
+        <p class="about-text">
+            Bachelor of Science in Information Technology student at North-West University with strong foundations in programming, database systems, and problem-solving. Experienced in software development and data-driven systems using SQL, Java, C++, C#, and Python. Passionate about cybersecurity, artificial intelligence, and building secure, efficient technology solutions.
+        </p>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="section gray-bg">
-        <h2>Technical Skills</h2>
+        <h2>Technical & Core Skills</h2>
         <div class="skills-grid">
-            <div class="skill-card">Python</div>
-            <div class="skill-card">HTML / CSS / JavaScript</div>
-            <div class="skill-card">SQL / Databases</div>
-            <div class="skill-card">Git / GitHub</div>
-            <div class="skill-card">Cybersecurity / Network Security</div>
+            <div class="skill-card">
+                <h3>Languages</h3>
+                <p>Python, Java, C++, C#, SQL</p>
+            </div>
+            <div class="skill-card">
+                <h3>Databases & Tools</h3>
+                <p>SQL, Oracle, ASP.NET, Git, GitHub, Burp Suite</p>
+            </div>
+            <div class="skill-card">
+                <h3>Core Concepts</h3>
+                <p>Data Structures, OOP, Cybersecurity & Vulnerability Testing, Generative AI</p>
+            </div>
+            <div class="skill-card">
+                <h3>Professional Skills</h3>
+                <p>Communication, Tutoring/Academic Support, Computer Literacy, Problem-Solving</p>
+            </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <h2>Featured Projects</h2>
+    <!-- Work Experience Section -->
+    <section id="experience" class="section">
+        <h2>Work Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>MWR Virtual Assistant - Cybersecurity</h3>
+                <span class="date">March 2026 – June 2026</span>
+                <ul>
+                    <li>Gained practical experience in web application security testing using Burp Suite.</li>
+                    <li>Applied concepts including XSS, DOM-Based XSS, CSRF, SQL Injection, RCE, File Upload vulnerabilities, Encoding, Encryption, and Hashing.</li>
+                    <li>Completed a capstone security challenge identifying and analyzing web application security flaws.</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>Student Assistant</h3>
+                <p class="subheading">School of Computer Science & Information Systems - North-West University</p>
+                <span class="date">July 2025 – November 2025</span>
+                <ul>
+                    <li>Assisted first-year students with programming concepts in C# using ASP.NET.</li>
+                    <li>Facilitated lab sessions, guided students through exercises, and provided tutorial support.</li>
+                    <li>Assisted lecturers with marking and providing detailed student feedback.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Projects Section -->
+    <section id="projects" class="section gray-bg">
+        <h2>Academic Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <h3>Full-Stack Web App</h3>
-                <p>Collaborative group project built with modern web technologies.</p>
-                <a href="https://github.com/LINDOKUHLE418" target="_blank" class="project-link">View Repository</a>
+                <h3>Clinic Booking System</h3>
+                <p><strong>Tech:</strong> ASP.NET / Visual Studio</p>
+                <p>Web-based clinic booking system developed to streamline appointment scheduling, manage bookings, reduce administrative workload, and improve user experience.</p>
+                <a href="https://github.com/LINDOKUHLE418" target="_blank" class="project-link">View Code Repository</a>
             </div>
             <div class="project-card">
-                <h3>Virtual CV Portfolio</h3>
-                <p>Interactive portfolio website hosted on GitHub Pages showcasing my technical journey.</p>
-                <a href="https://github.com/LINDOKUHLE418/45275602_Portfolio" target="_blank" class="project-link">View Repository</a>
+                <h3>Restaurant Ordering System</h3>
+                <p><strong>Tech:</strong> C++</p>
+                <p>Command-line ordering system enabling customer menu selection, automated total calculations, and receipt generation to improve transaction accuracy.</p>
+                <a href="https://github.com/LINDOKUHLE418" target="_blank" class="project-link">View Code Repository</a>
+            </div>
+            <div class="project-card">
+                <h3>Educational Privacy Awareness Game</h3>
+                <p><strong>Tech:</strong> Scratch</p>
+                <p>Collaborative project developing an educational game addressing privacy risks related to facial recognition and safeguards for responsible tech use.</p>
+                <a href="https://github.com/LINDOKUHLE418" target="_blank" class="project-link">View Code Repository</a>
             </div>
         </div>
     </section>
 
-    <!-- Resume Section -->
-    <section id="resume" class="section gray-bg">
-        <h2>Resume & Education</h2>
-        <div class="resume-item">
-            <h3>BSc in Computer Science / Information Technology</h3>
-            <p><strong>Focus:</strong> Software Engineering, Optimization, Cybersecurity, and Database Systems</p>
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <h2>Certifications</h2>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <h3>GenAI Course for Software Engineers</h3>
+                <p><strong>WeThinkCode (2025)</strong></p>
+                <p>Large language models, prompt engineering, AI workflows, and ethical AI usage in production.</p>
+            </div>
+            <div class="cert-card">
+                <h3>Introduction to CISSP</h3>
+                <p><strong>Simplilearn</strong></p>
+                <p>Cybersecurity CIA triad, access control, authentication, and core system defense principles.</p>
+            </div>
+            <div class="cert-card">
+                <h3>Microsoft AI Fluency Course</h3>
+                <p><strong>Microsoft / Geekulcha</strong></p>
+                <p>Artificial intelligence fundamentals, responsible AI, and modern business application.</p>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="section gray-bg">
         <h2>Get In Touch</h2>
-        <p>Feel free to reach out for collaborations or opportunities!</p>
+        <p>Feel free to reach out for career opportunities, collaborations, or networking!</p>
         <div class="contact-links">
-            <a href="https://github.com/LINDOKUHLE418" target="_blank" class="btn">GitHub</a>
-            <a href="#" target="_blank" class="btn">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/lindokuhle-nkosi-1b63b723a" target="_blank" class="btn">LinkedIn</a>
+            <a href="https://github.com/LINDOKUHLE418" target="_blank" class="btn">GitHub Profile</a>
             <a href="mailto:lindokuhlenkosi808@gmail.com" class="btn">Email Me</a>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Lindokuhle. All rights reserved.</p>
+        <p>&copy; 2026 Lindokuhle Nkosi. All rights reserved.</p>
     </footer>
 
 </body>
