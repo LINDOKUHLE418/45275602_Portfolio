@@ -1,65 +1,72 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', () => {
 
-    // 1. Smooth Scroll for "Learn More" and Navigation Links
-    const navLinks = document.querySelectorAll('a[href^="#"]');
+    // Tab Switching Functionality
+    const navItems = document.querySelectorAll('.nav-item');
+    const tabContents = document.querySelectorAll('.tab-content');
+    const switchTabBtns = document.querySelectorAll('.switch-tab-btn');
 
-    navLinks.forEach(link => {
-        link.addEventListener("click", function (e) {
-            e.preventDefault();
+    function activateTab(tabId) {
+        // Remove active class from all tabs & nav items
+        tabContents.forEach(content => content.classList.remove('active'));
+        navItems.forEach(item => item.classList.remove('active'));
 
-            const targetId = this.getAttribute("href");
-            const targetSection = document.querySelector(targetId);
+        // Activate selected tab content
+        const targetTab = document.getElementById(tabId);
+        if (targetTab) {
+            targetTab.classList.add('active');
+        }
 
-            if (targetSection) {
-                targetSection.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
+        // Highlight matching nav item
+        const activeNavItem = document.querySelector(`.nav-item[data-tab="${tabId}"]`);
+        if (activeNavItem) {
+            activeNavItem.classList.add('active');
+        }
+
+        // Scroll to top of content smoothly
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Add click event to Navbar items
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const tabId = item.getAttribute('data-tab');
+            if (tabId) {
+                activateTab(tabId);
             }
         });
     });
 
-    // 2. CV Modal Trigger (View / Download Pop-up)
-    const cvBtn = document.getElementById("openCvBtn");
-    const cvModal = document.getElementById("cvModal");
-    const closeBtn = document.querySelector(".close-btn");
-
-    if (cvBtn && cvModal) {
-        cvBtn.addEventListener("click", function () {
-            cvModal.style.display = "flex";
-        });
-
-        closeBtn.addEventListener("click", function () {
-            cvModal.style.display = "none";
-        });
-
-        // Close modal if user clicks outside of the box
-        window.addEventListener("click", function (e) {
-            if (e.target === cvModal) {
-                cvModal.style.display = "none";
+    // Add click event to buttons inside pages (e.g., "Learn More", "Get in Touch")
+    switchTabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const tabId = btn.getAttribute('data-tab');
+            if (tabId) {
+                activateTab(tabId);
             }
+        });
+    });
+
+    // Modal CV Functionality
+    const modal = document.getElementById('cvModal');
+    const openCvBtn = document.getElementById('openCvBtn');
+    const closeBtn = document.querySelector('.close-btn');
+
+    if (openCvBtn && modal) {
+        openCvBtn.addEventListener('click', () => {
+            modal.style.display = 'flex';
         });
     }
 
-    // 3. Highlight Active Navigation Item on Scroll
-    const sections = document.querySelectorAll("section, header");
-    const navItems = document.querySelectorAll(".nav-item");
-
-    window.addEventListener("scroll", () => {
-        let current = "";
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (pageYOffset >= sectionTop - sectionHeight / 3) {
-                current = section.getAttribute("id");
-            }
+    if (closeBtn && modal) {
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
         });
+    }
 
-        navItems.forEach(item => {
-            item.classList.remove("active");
-            if (item.getAttribute("href") === `#${current}`) {
-                item.classList.add("active");
-            }
-        });
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
     });
+
 });
