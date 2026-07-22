@@ -559,54 +559,19 @@ footer {
     margin-top: auto;
 }
 
-/* Responsive Scaling */
-@media (max-width: 850px) {
-    .hero-container, .about-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-text-content, .about-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-btns {
-        justify-content: center;
-    }
-
-    .about-content .section-title::after {
-        margin: 8px auto 0;
-    }
-
-    .hero h1 {
-        font-size: 2.2rem;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-/* Mobile Responsiveness for Navigation Bar */
+/* Optimized Mobile Navigation */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
     align-items: center;
-    gap: 12px;
-    padding: 15px 10px;
+    gap: 8px;
+    padding: 10px 8px;
   }
 
-  .nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px 12px;
-  }
-
-  .nav-links a {
-    font-size: 0.85rem;
-    padding: 6px 12px;
+  /* Target your navigation container/links */
+  nav a, .nav-links a {
+    font-size: 0.75rem;     
+    padding: 4px 8px;       
+    margin: 2px;
   }
 }
