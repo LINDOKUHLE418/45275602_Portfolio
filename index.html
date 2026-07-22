@@ -14,29 +14,33 @@
     <nav class="navbar">
         <div class="logo">Lindokuhle<span class="dot">.</span></div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="cv.pdf" download class="cv-nav-link">My CV</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" class="nav-item">Home</a></li>
+            <li><a href="#about" class="nav-item">About Me</a></li>
+            <li><a href="#skills" class="nav-item">Skills</a></li>
+            <li><a href="#experience" class="nav-item">Experience</a></li>
+            <li><a href="#projects" class="nav-item">Projects</a></li>
+            <li><a href="#certifications" class="nav-item">Certifications</a></li>
+            <li><button id="openCvBtn" class="cv-nav-link">My CV</button></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Full-Screen Hero Section -->
-    <header id="home" class="hero-fullscreen">
-        <div class="hero-bg-container">
-            <img src="888608-aesthetic-dark-wallpaper-for-iphone-free-hd-download.jpg" alt="Background" class="hero-bg-img">
-            <div class="hero-overlay"></div>
-        </div>
-        <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p class="typing-text">Passionate about Cybersecurity, Software Development & AI</p>
-            
-            <div class="hero-btns-centered">
-                <a href="#about" class="btn btn-hero">Learn More</a>
+    <!-- Restored Clean Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-image-frame">
+                <img src="WhatsApp Image 2026-07-21 at 21.27.56.jpeg" alt="Lindokuhle Nkosi" class="hero-profile-img">
+            </div>
+            <div class="hero-text-content">
+                <span class="greeting-badge">Welcome to my portfolio</span>
+                <h1>Hi, I'm <span class="highlight">Lindokuhle Nkosi</span></h1>
+                <p class="subtitle">Aspiring Software Engineer & Cybersecurity Enthusiast</p>
+                <p class="typing-text">Passionate about Software Development, Cybersecurity & AI</p>
+                
+                <div class="hero-btns">
+                    <a href="#about" class="btn btn-hero">Learn More</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
             </div>
         </div>
     </header>
@@ -44,7 +48,6 @@
     <!-- About Section -->
     <section id="about" class="section">
         <div class="about-container">
-            <!-- About Profile Picture -->
             <div class="about-image-container">
                 <div class="about-image-frame">
                     <img src="WhatsApp Image 2026-07-21 at 21.27.56.jpeg" alt="Lindokuhle Nkosi" class="profile-img">
@@ -126,7 +129,7 @@
                 </div>
             </div>
 
-            <!-- Core Concepts Card (Text Only Badges) -->
+            <!-- Core Concepts Card -->
             <div class="skill-card">
                 <h3>Core Concepts</h3>
                 <div class="tech-icons-grid">
@@ -255,9 +258,23 @@
         </div>
     </section>
 
+    <!-- CV Modal Popup -->
+    <div id="cvModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Lindokuhle Nkosi - Curriculum Vitae</h2>
+            <p>You can view or download the CV using the options below:</p>
+            <div class="modal-actions">
+                <a href="cv.pdf" target="_blank" class="btn btn-primary">Preview CV</a>
+                <a href="cv.pdf" download class="btn btn-hero">Download CV</a>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2026 Lindokuhle Nkosi. Designed with care & professional flair.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

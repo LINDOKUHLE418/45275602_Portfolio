@@ -7,7 +7,7 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open index.html",
+         "name": "Open index.html",
             "file": "c:\\Users\\LINDO\\Downloads\\45275602_Portfolio\\index.html"
         }
     ]
