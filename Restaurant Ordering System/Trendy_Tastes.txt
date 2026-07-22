@@ -1,0 +1,9 @@
+
+===== TRENDY TASTES RESTAURANT =====
+Customer: LINDOKUHLE NKOSI
+Order Details:
+1. Cold drink R27.99
+--------------------
+Total: R27.99
+====================
+Thank you for your purchase @ TRENDY TASTES, LINDOKUHLE NKOSI!

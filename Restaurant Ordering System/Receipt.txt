@@ -1,0 +1,10 @@
+
+===== TRENDY TASTES RESTAURANT =====
+Customer: li k
+Order Details:
+1. Cold drink R27.99
+2. Pizza R120.99
+--------------------
+Total: R148.98
+====================
+Thank you for your purchase @ TRENDY TASTES, li k!

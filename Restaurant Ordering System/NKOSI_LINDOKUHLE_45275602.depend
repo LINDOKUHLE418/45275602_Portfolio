@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1728851898 source:c:\users\lindokuhle\downloads\nkosi_lindokuhle_45275602\main.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	<fstream>
+	<limits>
+

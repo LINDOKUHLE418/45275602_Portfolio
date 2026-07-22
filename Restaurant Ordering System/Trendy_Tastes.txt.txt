@@ -1,0 +1,5 @@
+Cold drink R27.99
+Pizza R120.99
+Fries R30.99
+Wings R45.99
+Waffles R60.00
