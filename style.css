@@ -575,3 +575,28 @@ footer {
     margin: 2px;
   }
 }
+/* Certification Card Buttons */
+.cert-actions {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.cert-actions .btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.btn-outline-dark {
+    background: transparent;
+    color: var(--dark-blue-btn);
+    border: 1px solid var(--dark-blue-btn);
+}
+
+.btn-outline-dark:hover {
+    background: var(--dark-blue-btn);
+    color: #ffffff;
+}
