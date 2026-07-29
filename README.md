@@ -3,7 +3,7 @@ MY PERSONAL  VIRTUAL CV PORTFOLIO
 
 A clean, responsive, and interactive virtual CV portfolio designed to showcase my professional background, technical expertise, academic foundation, and software development projects.
 
-🚀 Features
+- Features
 Home Section: Hero banner introducing my background and professional statement.
 
 About Me: Brief overview of my career goals and interests.
@@ -20,7 +20,7 @@ Responsive Layout: Optimized for desktop, tablet, and mobile viewing.
 
 Interactive Elements: Smooth navigation and dynamic UI components powered by JavaScript.
 
-🛠️ Technologies Used
+- Technologies Used
 HTML5: Semantic site structure and layout logic.
 
 CSS3: Custom styling, layout design, and mobile responsiveness.
