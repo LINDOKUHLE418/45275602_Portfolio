@@ -1,4 +1,6 @@
-My Personal Virtual CV Portfolio
+MY PERSONAL  VIRTUAL CV PORTFOLIO
+
+
 A clean, responsive, and interactive virtual CV portfolio designed to showcase my professional background, technical expertise, academic foundation, and software development projects.
 
 🚀 Features
@@ -27,10 +29,8 @@ JavaScript (ES6+): Interactive elements and DOM manipulation.
 
 📂 Project Structure
 Plaintext
-├── index.html        # Main HTML file
-├── css/
-│   └── style.css     # Custom styles and media queries
-├── js/
-│   └── main.js       # Dynamic features and interaction script
-├── assets/           # Media files (images, icons, resume PDF)
-└── README.md         # Project documentation
+- index.html        # Main HTML file
+- style.css     # Custom styles and media queries
+- main.js       # Dynamic features and interaction script
+- assets/           # Media files (images, icons, resume PDF)
+- README.md         # Project documentation
